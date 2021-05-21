@@ -1,0 +1,340 @@
+body {
+  background-image: url("/Images/dot-grid.png");
+  display: grid;
+  grid-template-rows: 80px 1450px;
+}
+
+.navigation {
+  grid-row-start: 1;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.navigation .logo {
+  grid-column-start: 1;
+  display: grid;
+  grid-template-columns: auto max-content;
+  grid-template-rows: auto max-content;
+}
+.navigation .logo b {
+  font-size: 36px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  margin: 0;
+  padding: 0;
+  color: #03249b;
+}
+.navigation .otherPages {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto max-content;
+}
+
+.navigation .otherPages #theoryId {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.navigation .otherPages #gameModesId {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.navigation .otherPages #gameModesId .dropdownContent {
+  display: none;
+  grid-template-rows: repeat(1fr, 3);
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 20%;
+}
+
+.navigation .otherPages #gameModesId .dropdownContent span {
+  padding: 5% 10%;
+  text-align: left;
+  font-size: 18px;
+  color: #03249b;
+}
+
+.navigation .otherPages #gameModesId .dropdownContent span p {
+  text-align: left;
+  font-size: 12px;
+  color: black;
+}
+.navigation .otherPages #gameModesId:hover .dropdownContent {
+  display: grid;
+  cursor: pointer;
+}
+
+#logoId:hover,
+#theoryId:hover,
+#gameModesId:hover,
+#settingsId:hover,
+#contactMeId:hover,
+#x-icon:hover,
+#settings1:hover,
+#settings2:hover,
+#settings3:hover {
+  cursor: pointer;
+}
+
+.navigation .otherPages #gameModesId .dropdownContent span:hover {
+  background-color: grey;
+}
+
+.navigation .otherPages #settingsId {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+.navigation .otherPages .navButton {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #03249b;
+}
+
+.navigation .contactMe {
+  grid-column-start: 3;
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-rows: auto max-content;
+}
+
+.navigation .contactMe p {
+  font-size: 18px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  background-color: #c7f0ff;
+  margin: 0;
+  padding: 10px;
+  border-radius: 14px;
+}
+/*
+body {
+  background-image: url("/Images/dot-grid.png");
+  display: grid;
+  grid-template-rows: 80px 1450px;
+}
+
+.navigation {
+  grid-row-start: 1;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.navigation .logo {
+  grid-column-start: 1;
+
+  display: grid;
+  grid-template-columns: auto max-content;
+  grid-template-rows: auto max-content;
+}
+.navigation .logo p {
+  font-size: 36px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+
+  margin: 0;
+  padding: 0;
+}
+.navigation .otherPages {
+  grid-column-start: 2;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto max-content;
+}
+
+.navigation .otherPages #theoryId {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.navigation .otherPages #gameModesId {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.navigation .otherPages #gameModesId .dropdownContent {
+  display: none;
+  grid-template-rows: repeat(1fr, 3);
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 20%;
+}
+#logoId,
+#theoryId,
+#gameModesId,
+#settingsId,
+#contactMeId,
+#x-icon:hover,
+#settings1:hover,
+#settings2:hover,
+#settings3:hover {
+  cursor: pointer;
+}
+.navigation .otherPages #gameModesId .dropdownContent span {
+  padding: 5% 10%;
+  text-align: left;
+  font-size: 18px;
+  color: #03249b;
+}
+
+.navigation .otherPages #gameModesId .dropdownContent span p {
+  text-align: left;
+  font-size: 12px;
+  color: black;
+}
+.navigation .otherPages #gameModesId:hover .dropdownContent {
+  display: grid;
+}
+
+.navigation .otherPages #gameModesId .dropdownContent span:hover {
+  background-color: grey;
+}
+
+.navigation .otherPages #settingsId {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+.navigation .otherPages .navButton {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.navigation .contactMe {
+  grid-column-start: 3;
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-rows: auto max-content;
+}
+
+.navigation .contactMe p {
+  font-size: 18px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  background-color: #c7f0ff;
+  margin: 0;
+  padding: 10px;
+  border-radius: 14px;
+}
+*/
+.modesContainer {
+  grid-row-start: 2;
+  display: grid;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  grid-template-rows: 20% 1% 20% 1% 20%;
+  grid-template-columns: 10% 15% 50% 15% 10%;
+}
+
+.modesContainer #snappingId {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.modesContainer #trackingId {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.modesContainer #flickingId {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.modesContainer .modes {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 1%;
+  border-radius: 20px;
+}
+.modesContainer .modes .screenshot {
+  grid-column-start: 1;
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  object-position: none;
+  margin: auto auto;
+}
+
+.modesContainer .modes .modeDescription {
+  grid-column-start: 2;
+  margin: auto auto;
+  padding: 1em;
+  height: min-content;
+}
+
+.modesContainer .modes .modeDescription p {
+  margin-block-end: 0em;
+  font-size: large;
+}
+.modesContainer .modes .modeDescription b {
+  font-size: x-large;
+}
+
+.overlay {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 20%;
+  left: 25%;
+  background-color: #c7f0ff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: none;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 5% 25% 25% 25%;
+  padding: 10px;
+}
+
+.overlay #x-icon {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  margin: auto auto;
+  font-size: x-large;
+  color: black;
+}
+
+.overlay #settings1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  text-align: center;
+  font-size: x-large;
+  margin: auto auto;
+  color: black;
+}
+.overlay #settings2 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  text-align: center;
+  font-size: x-large;
+  margin: auto auto;
+  color: black;
+}
+.overlay #settings3 {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  text-align: center;
+  font-size: x-large;
+  margin: auto auto;
+  color: black;
+}
+
+#settings1:hover,
+#settings2:hover,
+#settings3:hover:hover {
+  color: blue;
+}

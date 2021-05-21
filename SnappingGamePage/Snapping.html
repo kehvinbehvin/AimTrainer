@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="snappingStyles.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="overlayId" class="overlay">
+      <p id="x-icon">&times;</p>
+      <p id="settings1">Settings 1</p>
+      <p id="settings2">Settings 2</p>
+      <p id="settings3">Settings 3</p>
+    </div>
+    <div id="navigationId" class="navigation">
+      <div id="logoId" class="logo">
+        <b>Aim Trainer</b>
+      </div>
+      <div id="otherPagesId" class="otherPages">
+        <div id="theoryId" class="theory">
+          <p class="navButton">Theory</p>
+        </div>
+        <div id="gameModesId" class="gameModes">
+          <div class="dropdown">
+            <p class="navButton">Game modes</p>
+          </div>
+          <div class="dropdownContent">
+            <span id="snapdropdown"
+              >Snapping
+              <p>Practice here for quick and accurate reaction</p>
+            </span>
+            <span id="flickdropdown"
+              >Flicking (Coming soon)
+              <p>Practice here to train your reaction timing</p>
+            </span>
+            <span id="trackdropdown"
+              >Tracking (Coming soon)
+              <p>Practice here to improve your tracking skills</p>
+            </span>
+          </div>
+        </div>
+        <div id="settingsId" class="settings">
+          <p class="navButton">Settings</p>
+        </div>
+      </div>
+      <div id="contactMeId" class="contactMe">
+        <p>Contact Me</p>
+      </div>
+    </div>
+    <div id="scoreBoardId" class="scoreBoard">
+      <div id="first" class="tries"></div>
+      <div id="second" class="tries"></div>
+      <div id="third" class="tries"></div>
+      <div id="fourth" class="tries"></div>
+      <div id="fifth" class="tries"></div>
+      <div id="sixth" class="tries"></div>
+    </div>
+    <div id="gameId" class="game">
+      <div id="dashBoardId" class="dashBoard">
+        <div id="timerId" class="timer">60</div>
+        <div id="scoreId" class="score">0</div>
+      </div>
+      <div id="shootingRangeId" class="shootingRangeStartOption">
+        <div id="targetId" class="target">Play?</div>
+      </div>
+    </div>
+    <script src="SnappingLogic.js"></script>
+    <script src="/Settings.js"></script>
+  </body>
+</html>
